@@ -39,27 +39,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{titlepage}
-	\centering
+    \centering
     \includegraphics[scale = 0.25]{wpi.png}\\[1.0 cm]
     \textsc{\LARGE Worcester Polytechnic Institute}\\[1.0 cm]
-	\textsc{\Large Major Qualifying Project}\\[0.5 cm]
-	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
-	{ \huge \bfseries \thetitle}\\[0.4 cm]
+    \textsc{\Large Major Qualifying Project}\\[0.5 cm]
+    \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+    { \huge \bfseries \thetitle}\\[0.4 cm]
     { \large Graphically Represented Image Processing}\\
-	\rule{\linewidth}{0.2 mm} \\[1.0 cm]
+    \rule{\linewidth}{0.2 mm} \\[1.0 cm]
 
-	\begin{flushleft}
+    \begin{flushleft}
         \emph{Submitted By:}\\
         Thomas Clark, Computer Science\\
         [0.4 cm]
         \emph{Advised By:}\\
         Michael Gennert, Robotics Engineering Director and Computer Science Professor\\
         Brad Miller, Robotics Engineering Professor\\[2 cm]
-   	\end{flushleft}
+       \end{flushleft}
 
-	{\large \thedate}\\[2 cm]
+    {\large \thedate}\\[2 cm]
 
-	\vfill
+    \vfill
 
 \end{titlepage}
 
@@ -131,7 +131,7 @@ OpenCV is also the de facto standard for computer vision routines for researcher
 \subsection{Toolkits}
 Based on our requirements, we chose to use the following languages and libraries to implement the application:
 \begin{itemize}
-	\item Java: The application is primarily written in the Java programming language.  We chose Java because it compiles to bytecode that runs unmodified on any supported platform.  This feature is useful for this project because it is intended to run on both development machines running 64-bit versions of Windows, OS X, or Linux as well as robot control systems that run on a variety of other architectures and operating systems.
+    \item Java: The application is primarily written in the Java programming language.  We chose Java because it compiles to bytecode that runs unmodified on any supported platform.  This feature is useful for this project because it is intended to run on both development machines running 64-bit versions of Windows, OS X, or Linux as well as robot control systems that run on a variety of other architectures and operating systems.
     \item Jython: To implement custom scripting, we chose to use Jython, which allows embedding Python scripts in the Java Virtual Machine.  Python was chosen because its ubiquity and its simple syntax make it suited to the educational and rapid development goals of the project.
     \item JavaFX: The JavaFX GUI toolkit was used for the user interface.  JavaFX is is the standard GUI toolkit for modern Java, and it works identically accross platforms.
     \item Guava
@@ -139,8 +139,18 @@ Based on our requirements, we chose to use the following languages and libraries
 \end{itemize}
 
 \subsection{User Interface}
+The user experience of the program is one of the most important aspects, since
+it distinguishes it from the existing solutions.  The user interface should
+represent the procedural, text-based problem of programming computer vision
+solutions as a higher-level problem of constructing a processing pipeline.
+This better represents the actual conventions of computer vision algorithms,
+and makes it easy to experiment with different operations.
+
+\subsubsection{The Pipeline}
+
+
 \fxnote{We should explain how the UI works and show some screenshots}
-The way user experience of the program is one of the most important aspects, since it distinguishes it from the existing solutions.  A user experience that makes creating computer vision pipelines intuitive is
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
