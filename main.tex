@@ -144,17 +144,9 @@ This better represents the actual conventions of computer vision algorithms,
 and makes it easy to experiment with different operations.
 
 \subsubsection{Steps}
-An instance in a pipeline of an operation being called is represented as a
-"step".  A step includes the name of the operation it performs, and a list of
-all of the inputs and outputs of the operation.  Representing a step like this
-should help users rapidly develop algorithms by immediately presenting what
-inputs should be provided to an operation and what outputs it will produce, so
-users won't have to frequently look up documentation.
+An instance of an operation in the pipeline is called as a "step".  A step includes the name of the operation it performs, and a list of all of the inputs and outputs of the operation.  Representing a step like this should help users rapidly develop algorithms by immediately presenting what inputs should be provided to an operation and what outputs it will produce.  This contrasts with traditional computer vision programming, which requires users to frequently refer to documentation and time-consuming trial-and-error to discover properties of an operation that we can depict graphically.
 \par
-In addition, inputs that contain values like numbers or enumerations can be
-input with a graphical control.  Users can easily adjust the parameters used
-an operation, such a as a blur radius or threhsold values, and see the result
-without guessing and recompiling.\\[0.5 cm]
+Inputs that contain values like numbers, ranges, or enumerations can be input with a graphical control.  Users can easily adjust the parameters used an operation, such a as a blur radius or threhsold values, and see the result without guessing and recompiling.\\[0.5 cm]
 
 \centerline{
     \includegraphics[scale = 0.5]{step.png}
