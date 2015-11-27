@@ -125,17 +125,14 @@ OpenCV is also the de facto standard for computer vision routines for researcher
 
 \section{Design}
 
-\fxnote{Technical details about how we implemented/plan to implement the program, including language, toolkits, eventbus stuff, headless mode stuff, code generation, etc...}
-
-
 \subsection{Toolkits}
 Based on our requirements, we chose to use the following languages and libraries to implement the application:
 \begin{itemize}
     \item Java: The application is primarily written in the Java programming language.  We chose Java because it compiles to bytecode that runs unmodified on any supported platform.  This feature is useful for this project because it is intended to run on both development machines running 64-bit versions of Windows, OS X, or Linux as well as robot control systems that run on a variety of other architectures and operating systems.
     \item Jython: To implement custom scripting, we chose to use Jython, which allows embedding Python scripts in the Java Virtual Machine.  Python was chosen because its ubiquity and its simple syntax make it suited to the educational and rapid development goals of the project.
     \item JavaFX: The JavaFX GUI toolkit was used for the user interface.  JavaFX is is the standard GUI toolkit for modern Java, and it works identically accross platforms.
-    \item Guava
-    \item OpenCV
+    \item Guava: Guava is Google's extension to the Java standard libraries. It was chosen due to its useful utilities, such as string manipulation and cross-platform path helpers, as well as its \texttt{EventBus} class, which is used extensively in GRIP.
+    \item OpenCV: OpenCV is an industry standard in open source computer vision, and was a natural choice for providing implementations of the numerous coputer vision routines used in the application.
 \end{itemize}
 
 \subsection{User Interface}
